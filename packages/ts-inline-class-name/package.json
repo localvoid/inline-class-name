@@ -1,0 +1,41 @@
+{
+  "name": "ts-inline-class-name",
+  "version": "0.1.0",
+  "main": "dist/main/index.js",
+  "typings": "dist/typings/index.d.ts",
+  "sideEffects": false,
+  "files": [
+    "dist",
+    "src",
+    "!dist/**/*.tsbuildinfo",
+    "!src/**/__tests__",
+    "README.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "prepublishOnly": "npm run clean && npm run dist",
+    "clean": "rm -rf ./dist",
+    "dist": "../../node_modules/.bin/tsc -p ./tsconfig.json",
+    "watch": "../../node_modules/.bin/tsc -p ./tsconfig.json -w"
+  },
+  "description": "TypeScript transformer that inlines className() invocations from the inline-class-name module",
+  "license": "MIT",
+  "author": {
+    "name": "Boris Kaul",
+    "email": "localvoid@gmail.com",
+    "url": "https://github.com/localvoid"
+  },
+  "keywords": [
+    "typescript",
+    "transformer"
+  ],
+  "homepage": "https://github.com/localvoid/inline-class-name",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/localvoid/inline-class-name"
+  },
+  "bugs": {
+    "url": "https://github.com/localvoid/inline-class-name/issues"
+  },
+  "github": "https://github.com/localvoid/inline-class-name"
+}

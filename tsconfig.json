@@ -1,0 +1,23 @@
+{
+  "extends": "./tsconfig.checks.json",
+  "compilerOptions": {
+    "baseUrl": ".",
+    "target": "ES2018",
+    "module": "CommonJS",
+    "moduleResolution": "node",
+    "paths": {
+      "inline-class-name": [
+        "packages/inline-class-name/src"
+      ],
+      "ts-hoistr": [
+        "packages/ts-inline-class-name/src"
+      ]
+    },
+    "types": [
+      "node"
+    ]
+  },
+  "include": [
+    "packages/*/src/**/*.ts"
+  ]
+}

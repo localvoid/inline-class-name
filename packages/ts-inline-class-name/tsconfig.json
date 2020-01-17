@@ -1,0 +1,22 @@
+{
+  "extends": "../../tsconfig.checks.json",
+  "compilerOptions": {
+    "incremental": true,
+    "target": "ES2020",
+    "module": "CommonJS",
+    "outDir": "dist/main",
+    "declarationDir": "dist/typings",
+    "moduleResolution": "node",
+    "declaration": true,
+    "sourceMap": true,
+    "importHelpers": true,
+    "noEmitHelpers": true,
+    "removeComments": false
+  },
+  "include": [
+    "src/**/*.ts"
+  ],
+  "exclude": [
+    "**/__tests__"
+  ]
+}
