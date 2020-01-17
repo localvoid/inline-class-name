@@ -27,7 +27,7 @@ Output:
 ```js
 import * as css from "row.css";
 
-function p(locked: boolean) {
+function p(locked, dragged) {
   return (locked ? (dragged ? `${css.Row} ${css.Locked} ${css.Dragged}` : `${css.Row} ${css.Locked}`) : (dragged ? `${css.Row} ${css.Dragged}` : `${css.Row}`));
 }
 ```
@@ -54,7 +54,7 @@ Output:
 ```js
 import * as css from "row.css";
 
-function p(locked: boolean, dragged: boolean) {
+function p(locked, dragged) {
   return (locked ? `${css.Row} ${css.Locked}` : (dragged ? `${css.Row} ${css.Dragged}` : `${css.Row}`));
 }
 ```
